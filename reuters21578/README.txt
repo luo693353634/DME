@@ -1,20 +1,14 @@
 
           Reuters-21578 text categorization test collection
-                           Distribution 1.0
-                          README file (v 1.3)
-                              14 May 2004
+                        Distribution 1.0
+                       README file (v 1.2)
+                        26 September 1997
 
-                            David D. Lewis
-               David D. Lewis Consulting and Ornarose, Inc. 
-                          www.daviddlewis.com
-
+                         David D. Lewis
+                      AT&T Labs - Research     
+                     lewis@research.att.com
 
 I. Introduction
-
-[Note: There's much that could be improved in this document, but given
-that Reuters-21578 is being superceded by RCV1, I'm not likely to make
-those improvements myself.  Anyone who would like to create a revised
-version of this document is invited to contact me.]
 
    This README describes Distribution 1.0 of the Reuters-21578 text
 categorization test collection, a resource for research in information
@@ -36,8 +30,8 @@ the data set (see "Availability & Questions").
 III. Availability & Questions
 
    The Reuters-21578, Distribution 1.0 test collection is available
-from 
- http://www.daviddlewis.com/resources/testcollections/reuters21578
+from David D. Lewis' professional home page, currently:
+             http://www.research.att.com/~lewis
 
 Besides this README file, the collection consists of 22 data files, an
 SGML DTD file describing the data file format, and six files
@@ -51,7 +45,7 @@ entire distribution is available as reuters21578.tar.gz.
    The text categorization mailing list, DDLBETA, is a good place to
 send questions about this collection and other text categorization
 issues. You may join the list by writing David Lewis at
-ddlbeta-request@daviddlewis.com. 
+lewis@research.att.com.
 
 
 IV. History & Acknowledgements
@@ -656,10 +650,11 @@ not included files of this sort in the Reuters-21578 distribution.
 
     However, we are willing to make available as part of the
 distribution any tuple representations of this sort that researchers
-want to contribute.  Perhaps the ideal situation would be if someone
-with a strong interest in feature set formation produced tuples based
-on a high quality set of features which other researchers interested
-only in learning algorithms could make use of.
+want to contribute. (Contact lewis@research.att.com if you would like
+to do this.) Perhaps the ideal situation would be if someone with a
+strong interest in feature set formation produced tuples based on a
+high quality set of features which other researchers interested only
+in learning algorithms could make use of.
 
 
 X. Bibliography
