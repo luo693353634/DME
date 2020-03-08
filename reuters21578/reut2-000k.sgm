@@ -1,4 +1,17 @@
-<TEXT>&#2;
+<!DOCTYPE lewis SYSTEM "lewis.dtd">
+<REUTERS TOPICS="YES" LEWISSPLIT="TRAIN" CGISPLIT="TRAINING-SET" OLDID="5544" NEWID="1">
+<DATE>26-FEB-1987 15:01:01.79</DATE>
+<TOPICS><D>cocoa</D></TOPICS>
+<PLACES><D>el-salvador</D><D>usa</D><D>uruguay</D></PLACES>
+<PEOPLE></PEOPLE>
+<ORGS></ORGS>
+<EXCHANGES></EXCHANGES>
+<COMPANIES></COMPANIES>
+<UNKNOWN>
+#5;#5;#5;C T
+#22;#22;#1;f0704#31;reute
+u f BC-BAHIA-COCOA-REVIEW   02-26 0105</UNKNOWN>
+<TEXT>#2;
 <TITLE>BAHIA COCOA REVIEW</TITLE>
 <DATELINE>    SALVADOR, Feb 26 - </DATELINE><BODY>Showers continued throughout the week in
 the Bahia cocoa zone, alleviating the drought since early
@@ -56,7 +69,7 @@ crop.
 be published by the Brazilian Cocoa Trade Commission after
 carnival which ends midday on February 27.
  Reuter
-&#3;</BODY></TEXT>
+#3;</BODY></TEXT>
 </REUTERS>
 <REUTERS TOPICS="NO" LEWISSPLIT="TRAIN" CGISPLIT="TRAINING-SET" OLDID="5545" NEWID="2">
 <DATE>26-FEB-1987 15:02:20.00</DATE>
@@ -67,20 +80,44 @@ carnival which ends midday on February 27.
 <EXCHANGES></EXCHANGES>
 <COMPANIES></COMPANIES>
 <UNKNOWN>
-&#5;&#5;&#5;F Y
-&#22;&#22;&#1;f0708&#31;reute
-d f BC-STANDARD-OIL-&lt;SRD>-TO   02-26 0082</UNKNOWN>
-<TEXT>&#2;
-<TITLE>STANDARD OIL &lt;SRD> TO FORM FINANCIAL UNIT</TITLE>
+#5;#5;#5;F Y
+#22;#22;#1;f0708#31;reute
+d f BC-STANDARD-OIL-lt;SRD>-TO   02-26 0082</UNKNOWN>
+<TEXT>#2;
+<TITLE>STANDARD OIL lt;SRD> TO FORM FINANCIAL UNIT</TITLE>
 <DATELINE>    CLEVELAND, Feb 26 - </DATELINE><BODY>Standard Oil Co and BP North America
 Inc said they plan to form a venture to manage the money market
 borrowing and investment activities of both companies.
     BP North America is a subsidiary of British Petroleum Co
-Plc &lt;BP>, which also owns a 55 pct interest in Standard Oil.
+Plc lt;BP>, which also owns a 55 pct interest in Standard Oil.
     The venture will be called BP/Standard Financial Trading
 and will be operated by Standard Oil under the oversight of a
 joint management committee.
 
  Reuter
-&#3;</BODY></TEXT>
+#3;</BODY></TEXT>
+</REUTERS>
+<REUTERS TOPICS="NO" LEWISSPLIT="TRAIN" CGISPLIT="TRAINING-SET" OLDID="5546" NEWID="3">
+<DATE>26-FEB-1987 15:03:27.51</DATE>
+<TOPICS></TOPICS>
+<PLACES><D>usa</D></PLACES>
+<PEOPLE></PEOPLE>
+<ORGS></ORGS>
+<EXCHANGES></EXCHANGES>
+<COMPANIES></COMPANIES>
+<UNKNOWN>
+#5;#5;#5;F A
+#22;#22;#1;f0714#31;reute
+d f BC-TEXAS-COMMERCE-BANCSH   02-26 0064</UNKNOWN>
+<TEXT>#2;
+<TITLE>TEXAS COMMERCE BANCSHARES lt;TCB> FILES PLAN</TITLE>
+<DATELINE>    HOUSTON, Feb 26 - </DATELINE><BODY>Texas Commerce Bancshares Inc's Texas
+Commerce Bank-Houston said it filed an application with the
+Comptroller of the Currency in an effort to create the largest
+banking network in Harris County.
+    The bank said the network would link 31 banks having
+13.5 billion dlrs in assets and 7.5 billion dlrs in deposits.
+
+ Reuter
+#3;</BODY></TEXT>
 </REUTERS>

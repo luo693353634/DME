@@ -4,13 +4,6 @@ from nltk.corpus import stopwords
 import re
 import glob
 
-def xml_read(name, tag):    #Read xml file
-    tree = ET.parse(name)
-    lines = []
-    for elem in tree.iter(tag):
-        lines.append(elem.text)
-    return lines            #output is a list
-
 def read_file(name):
     f=open(name,'r',errors='ignore')
     lines=f.readlines()
@@ -33,29 +26,38 @@ def preprocess(text):
 
 def get_content(text):
     contents=re.findall(r'\<[B][O][D][Y]\>.*?\<\/[B][O][D][Y]\>',text)
-    con1=re.findall(r'\<[B][O][D][Y]\>',text)
-    print(len(con1))
     all_tokens=[]
     for content in contents:
         remove_content=re.sub(r'\<\/?[B][O][D][Y]\>','',content)
         tokens=preprocess(remove_content)
-        all_tokens.append(tokens)
-    print(len(all_tokens))
+        all_tokens.append([' '.join(tokens)])
     return all_tokens
 
+def get_topics(text):
+    contents=re.findall(r'\<[T][O][P][I][C][S]\>.*?\<\/[T][O][P][I][C][S]\>',text)
+    all_topics=[]
+    for content in contents:
+        remove_content=re.sub(r'\<\/?[T][O][P][I][C][S]\>','',content)
+        remove_content=re.sub(r'\<\/?[D]\>','',remove_content)
+        all_topics.append(remove_content)
+    return all_topics
+
+
 def read_document():
-    files=glob.glob("reuters21578/reut2-000.sgm")
+    files=glob.glob("reuters21578/reut2-000k.sgm")
     all_tokens=[]
     for file in files:
         whole_news=read_file(file)
         tokens_in_file=get_content(whole_news)
+        topics_in_file=get_topics(whole_news)
+        for i in range(len(topics_in_file)):
+            tokens_in_file[i].insert(0,topics_in_file[i])
         all_tokens.extend(tokens_in_file)
-    # print(len(all_tokens))
+        print(all_tokens)
     return all_tokens
 
 if __name__=="__main__":
     read_document()
-
 
 '''
 def get_index(name):         #Create inverted_index
