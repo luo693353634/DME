@@ -1,16 +1,8 @@
-import xml.etree.ElementTree as ET
 import nltk
 from nltk.corpus import stopwords
 import re
 import glob
-
-def read_file(name):
-    f=open(name,'r',errors='ignore')
-    lines=f.readlines()
-    article=""
-    for line in lines:
-        article+=line.strip()
-    return article
+from tools import *
 
 def preprocess(text):
     lower = text.lower()
@@ -25,10 +17,18 @@ def preprocess(text):
     return normalisation_tokens
 
 def get_content(text):
-    contents=re.findall(r'\<[B][O][D][Y]\>.*?\<\/[B][O][D][Y]\>',text)
+    contents=re.findall(r'\<[T][E][X][T].*?\>.*?\<\/[T][E][X][T]\>',text)
     all_tokens=[]
     for content in contents:
-        remove_content=re.sub(r'\<\/?[B][O][D][Y]\>','',content)
+        title=re.findall(r'\<[T][I][T][L][E]\>.*?\<\/[T][I][T][L][E]\>',content)
+        body=re.findall(r'\<[B][O][D][Y]\>.*?\<\/[B][O][D][Y]\>',content)
+        remove_title=''
+        remove_body=''
+        if title:
+            remove_title=re.sub(r'\<\/?[T][I][T][L][E]','',title[0])
+        if body:
+            remove_body=re.sub(r'\<\/?[B][O][D][Y]\>','',body[0])
+        remove_content=remove_title+' '+remove_body
         tokens=preprocess(remove_content)
         all_tokens.append([' '.join(tokens)])
     return all_tokens
@@ -42,9 +42,8 @@ def get_topics(text):
         all_topics.append(remove_content)
     return all_topics
 
-
-def read_document():
-    files=glob.glob("reuters21578/reut2-000k.sgm")
+def get_tokens():
+    files=glob.glob("reuters21578/reut2-000.sgm")
     all_tokens=[]
     for file in files:
         whole_news=read_file(file)
@@ -52,12 +51,17 @@ def read_document():
         topics_in_file=get_topics(whole_news)
         for i in range(len(topics_in_file)):
             tokens_in_file[i].insert(0,topics_in_file[i])
+        save_json('json_data/reut2-000.json',tokens_in_file)
         all_tokens.extend(tokens_in_file)
-        print(all_tokens)
-    return all_tokens
+    # save_json('json_data/reut2.json',tokens_in_file)
+
+
 
 if __name__=="__main__":
-    read_document()
+    get_tokens()
+    # files=glob.glob('json_data/reut2-000k.json')
+    # save=load_json(files[0])
+    # print(save['1'])
 
 '''
 def get_index(name):         #Create inverted_index
