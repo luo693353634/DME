@@ -42,15 +42,26 @@ def get_topics(text):
         all_topics.append(remove_content)
     return all_topics
 
+def get_tag(text):
+    tags=re.findall(r'[L][E][W][I][S][S][P][L][I][T]\=\"\w+\"',text)
+    all_tags=[]
+    for tag in tags:
+        remove_tag=re.findall(r'\"\w+\"',tag)
+        remove_tag=re.findall(r'\w+',remove_tag[0])
+        all_tags.append(remove_tag[0])
+    return all_tags
+
 def get_tokens():
     files=glob.glob("reuters21578/reut2-000.sgm")
     all_tokens=[]
     for file in files:
         whole_news=read_file(file)
+        labels=get_tag(whole_news)
         tokens_in_file=get_content(whole_news)
         topics_in_file=get_topics(whole_news)
         for i in range(len(topics_in_file)):
             tokens_in_file[i].insert(0,topics_in_file[i])
+            tokens_in_file[i].insert(0,labels[i])
         save_json('json_data/reut2-000.json',tokens_in_file)
         all_tokens.extend(tokens_in_file)
     # save_json('json_data/reut2.json',tokens_in_file)
