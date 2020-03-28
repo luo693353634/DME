@@ -14,8 +14,7 @@ def transfer_dict(tokens):
         save[str(i+1)]=tokens[i]
     return save
 
-def save_json(name,tokens):
-    dict=transfer_dict(tokens)
+def save_json(name,dict):
     file=open(name,'w+')
     json.dump(dict,file)
 

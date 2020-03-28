@@ -68,7 +68,8 @@ def get_tokens():
             tokens_in_file[i].insert(0,topics_in_file[i])
             tokens_in_file[i].insert(0,labels[i])
         all_tokens.extend(tokens_in_file)
-    save_json('json_data/reut2.json',all_tokens)
+    dict=transfer_dict(all_tokens)
+    save_json('json_data/reut2.json',dict)
 
 def count_categories():
     data=get_dict()
@@ -79,8 +80,14 @@ def count_categories():
             catagories=catagories.split()
             for catagory in catagories:
                 number_of_category[catagory]+=1
-    print(sorted(number_of_category.items(),key=lambda items:items[1],reverse=True))
-    return number_of_category
+    list_catas=sorted(number_of_category.items(),key=lambda items:items[1],reverse=True)
+    define={}
+    i=0
+    for name in list_catas:
+        if i<11:
+            i+=1
+        define[name[0]]=str(i)
+    save_json('json_data/catas.json',define)
 
 def word_count():
     data=get_dict()
@@ -95,10 +102,8 @@ def word_count():
     print(sorted(number_word.items(),key=lambda item:item[1],reverse=True))
     return number_word
 
-
-
 if __name__=="__main__":
     # get_tokens()
-    count_categories()
+    # count_categories()
     word_count()
 
