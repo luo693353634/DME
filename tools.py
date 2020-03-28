@@ -5,7 +5,7 @@ def read_file(name):
     lines=f.readlines()
     article=""
     for line in lines:
-        article+=line.strip()
+        article+=line.strip()+' '
     return article
 
 def transfer_dict(tokens):
@@ -20,7 +20,7 @@ def save_json(name,tokens):
     json.dump(dict,file)
 
 def load_json(name):
-    file=open(name,'r',errors='ignore')
+    file=open(name,'r')
     return json.load(file)
 
 def get_dict():
