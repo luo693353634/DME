@@ -20,5 +20,9 @@ def save_json(name,tokens):
     json.dump(dict,file)
 
 def load_json(name):
-    file=open(name,'r+')
+    file=open(name,'r',errors='ignore')
     return json.load(file)
+
+def get_dict():
+    dict=load_json('json_data/reut2.json')
+    return dict
