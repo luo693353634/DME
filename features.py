@@ -72,5 +72,5 @@ if __name__ == "__main__":
     print(num_of_data)
 
     count_joint_prob(num_of_data)
-    # count_prob_categories()
-    # count_prob_words()
+    # count_prob_categories(num_of_data)
+    # count_prob_words(num_of_data)
