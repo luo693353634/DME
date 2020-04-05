@@ -1,11 +1,6 @@
 from tools import *
 from preprocess import *
 
-
-def get_features():
-    word_dict = word_count()
-
-
 def count_prob_categories(num_of_data):
     listcat = count_categories()
     prob_of_category = defaultdict(float)
