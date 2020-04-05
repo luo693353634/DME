@@ -1,5 +1,6 @@
 from tools import *
 from preprocess import *
+import math
 
 def count_prob_categories(num_of_data):
     listcat = count_categories()
@@ -55,17 +56,36 @@ def count_joint_prob(num_of_data):
 
     save_json('json_data/joint_prob.json', joint_prob_dict)
 
+def get_mi():
+    vocab_prob = load_json('json_data/words_prob.json')
+    data = load_json('json_data/reut2.json')
+    catas_prob = load_json('json_data/catas_prob.json')
+    joint_prob = load_json('json_data/joint_prob.json')
+    label='earn'
+    mi_dict={}
+    for key in data:
+        value=data.get(key)
+        if label in value[1].split():
+            for word in value[2].split():
+                pmi = math.log2(joint_prob[word][label]/(catas_prob[label]*vocab_prob[word]))
+                if pmi>0:
+                    mi_dict[word]=joint_prob[word][label]*pmi
+    save_json('json_data/mi_earn.json',mi_dict)
+
+def feature_extract():
+    files=glob.glob('json_data/mi_*.json')
+    features={}
+    for file in files:
+        mi=load_json(file)
+        name=str(file)
+        label=re.findall(r'[_]\w+',name)[1]
+        label=re.sub(r'[_]','',label)
+        feature=[]
+        for key in mi:
+            feature.append(key)
+        features[label]=feature
+    save_json('json_data/features.json',features)
 
 if __name__ == "__main__":
-    data = load_json('json_data/reut2.json')
-    num_of_data = 0
+    feature_extract()
 
-    for key in data.keys():
-        catagories = data.get(key)[1]
-        if catagories:
-            num_of_data += 1
-    print(num_of_data)
-
-    count_joint_prob(num_of_data)
-    # count_prob_categories(num_of_data)
-    # count_prob_words(num_of_data)

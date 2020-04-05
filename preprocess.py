@@ -63,7 +63,6 @@ def get_tokens():
     files = glob.glob("reuters21578/reut2-*.sgm")
     all_tokens = []
     for file in files:
-        print(file)
         whole_news = read_file(file)
         labels = get_tag(whole_news)
         tokens_in_file = get_content(whole_news)
