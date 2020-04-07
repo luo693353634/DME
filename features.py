@@ -1,5 +1,7 @@
 from preprocess import *
 import math
+import numpy as np
+import matplotlib.pyplot as plt
 
 def count_prob_categories(num_of_data):
     listcat = count_categories()
@@ -85,6 +87,26 @@ def feature_extract():
         features[label]=feature
     save_json('json_data/features.json',features)
 
+
+
+
 if __name__ == "__main__":
-    feature_extract()
+    # feature_extract()
+    data=count_categories()
+    name=[]
+    freq=[]
+    for value in data:
+        name.append(value[0])
+        freq.append(value[1])
+    x=np.arange(1,11)
+    y=np.array(freq[:10])
+    print(y)
+    plt.xlabel('class_name')
+    plt.ylabel('frequency')
+    plt.bar(x,y,0.5,color='red',tick_label=name[:10])
+    plt.show()
+
+    
+
+
 

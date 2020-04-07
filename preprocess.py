@@ -115,4 +115,4 @@ def word_count():
 if __name__ == "__main__":
     # get_tokens()
     count_categories()
-    word_count()
+    # word_count()
