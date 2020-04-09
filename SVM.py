@@ -15,7 +15,7 @@ def training(label,name):
                 output.append(1)
             else:
                 output.append(0)
-    clf=svm.LinearSVC()
+    clf=svm.LinearSVC(loss='hinge')
     print("training_start")
     clf.fit(feature,output)
     joblib.dump(clf,name)
@@ -83,12 +83,9 @@ def f1_score():
     mini_F1=(2*mini_precision*mini_recall)/(mini_precision+mini_recall)
     print(round(mini_precision,2),round(mini_recall,2),round(mini_F1,2))
 
-
-
-
 if __name__=="__main__":
-    # training('ship','svm_model/ship.m')
-    # test_result('ship','svm_model/ship.m')
+    training('money-fx','svm_model/money-fx.m')
+    test_result('money-fx','svm_model/money-fx.m')
     f1_score()
 
 
