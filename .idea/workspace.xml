@@ -36,7 +36,7 @@
       <recent name="$PROJECT_DIR$/reuters21578" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SVM (2)">
+  <component name="RunManager" selected="Python.SVM (3)">
     <configuration name="SVM (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dme" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,7 +79,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SVM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SVM (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dme" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SVM (3)" />
         <item itemvalue="Python.SVM (2)" />
         <item itemvalue="Python.features (1)" />
         <item itemvalue="Python.SVM (1)" />
         <item itemvalue="Python.features" />
-        <item itemvalue="Python.SVM" />
       </list>
     </recent_temporary>
   </component>

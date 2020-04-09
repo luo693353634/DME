@@ -84,8 +84,8 @@ def f1_score():
     print(round(mini_precision,2),round(mini_recall,2),round(mini_F1,2))
 
 if __name__=="__main__":
-    training('corn','svm_model/corn.m')
-    test_result('corn','svm_model/corn.m')
+    training('grain','svm_model/grain.m')
+    test_result('grain','svm_model/grain.m')
     f1_score()
 
 
