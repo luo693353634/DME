@@ -84,14 +84,14 @@ def feature_extract():
         feature=[]
         for key in mi:
             feature.append(key)
-        features[label]=feature[:128]
+        features[label]=feature[:256]
     save_json('json_data/features.json',features)
 
 
 
 
 if __name__ == "__main__":
-    # feature_extract()
+    feature_extract()
     feature=load_json('json_data/features.json')
     for key in feature:
         print(len(feature.get(key)))
