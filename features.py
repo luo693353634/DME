@@ -115,6 +115,8 @@ if __name__ == "__main__":
     # plt.bar(x,y,0.5,color='red',tick_label=name[:10])
     # plt.show()
 
+
+
     
 
 

@@ -60,10 +60,28 @@ def save_true_result():
     print(real_label)
     save_json('svm_model/real_label.json',real_label)
 
+def f1_score():
+    true_value=load_json('svm_model/real_label.json')
+    prediction=load_json('svm_model/result.json')
+    for key in prediction:
+        predict=len(prediction.get(key))
+        true=len(true_value.get(key))
+        right=0
+        for value in true_value.get(key):
+            if value in prediction.get(key):
+                right+=1
+        precision=right/predict
+        recall=right/true
+        F1=(2*precision*recall)/(precision+recall)
+        print(round(F1,2))
+
+
+
+
 if __name__=="__main__":
     # training('wheat','svm_model/wheat.m')
-    test_result('corn','svm_model/corn.m')
-
+    # test_result('corn','svm_model/corn.m')
+    f1_score()
 
 
 
