@@ -84,8 +84,8 @@ def f1_score():
     print(round(mini_precision,2),round(mini_recall,2),round(mini_F1,2))
 
 if __name__=="__main__":
-    training('money-fx','svm_model/money-fx.m')
-    test_result('money-fx','svm_model/money-fx.m')
+    training('corn','svm_model/corn.m')
+    test_result('corn','svm_model/corn.m')
     f1_score()
 
 

@@ -78,13 +78,15 @@ def feature_extract():
     features={}
     for file in files:
         mi=load_json(file)
+        rank_mi=list(sorted(mi.items(),key=lambda item:item[1],reverse=True))[:256]
         name=str(file)
         label=re.findall(r'[_]\w+',name)[1]
         label=re.sub(r'[_]','',label)
         feature=[]
-        for key in mi:
-            feature.append(key)
-        features[label]=feature[:256]
+        for key in rank_mi:
+            feature.append(key[0])
+        features[label]=feature
+        print(label,feature)
     save_json('json_data/features.json',features)
 
 def feature_vector(label,text):
@@ -101,6 +103,8 @@ if __name__ == "__main__":
     feature=load_json('json_data/features.json')
     for key in feature:
         print(len(feature.get(key)))
+
+
     # data=count_categories()
     # name=[]
     # freq=[]
