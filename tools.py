@@ -23,10 +23,14 @@ def save_json(name, dict):
 
 
 def load_json(name):
-    file = open(name, 'r')
+    file = open(name, 'r+')
     return json.load(file)
 
 
 def get_dict():
     dict = load_json('json_data/reut2.json')
     return dict
+
+def get_label_id():
+    label=load_json('json_data/catas.json')
+    return label

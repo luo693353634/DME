@@ -87,8 +87,14 @@ def feature_extract():
         features[label]=feature[:256]
     save_json('json_data/features.json',features)
 
-
-
+def feature_vector(label,text):
+    features=load_json('json_data/features.json')
+    feature=features[label]
+    vector=[0]*len(feature)
+    for i in range(len(feature)):
+        if feature[i] in text:
+            vector[i]=1
+    return vector
 
 if __name__ == "__main__":
     feature_extract()
