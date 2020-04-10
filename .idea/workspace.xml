@@ -36,28 +36,7 @@
       <recent name="$PROJECT_DIR$/reuters21578" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SVM (3)">
-    <configuration name="SVM (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dme" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVM.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.SVM (4)">
     <configuration name="SVM (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dme" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,7 +79,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="features (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SVM (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dme" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -112,7 +91,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/features.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,7 +100,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="features" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="SVM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dme" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVM.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="features (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dme" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SVM (4)" />
+        <item itemvalue="Python.SVM" />
         <item itemvalue="Python.SVM (3)" />
         <item itemvalue="Python.SVM (2)" />
         <item itemvalue="Python.features (1)" />
-        <item itemvalue="Python.SVM (1)" />
-        <item itemvalue="Python.features" />
       </list>
     </recent_temporary>
   </component>
@@ -170,33 +170,33 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="631" y="302" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.813@0.23.1440.813" timestamp="1586443430503" />
-    <state width="1036" height="199" key="GridCell.Tab.0.bottom" timestamp="1586476022503">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1036" height="199" key="GridCell.Tab.0.bottom" timestamp="1586515794420">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1379" height="217" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1586105773979" />
-    <state width="1379" height="269" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1586294409652" />
-    <state width="1036" height="199" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1586476022503" />
+    <state width="1036" height="199" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1586515794420" />
+    <state width="1036" height="199" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1586476852558" />
     <state width="1036" height="199" key="GridCell.Tab.0.bottom/0.23.1440.815@0.23.1440.815" timestamp="1586475777916" />
-    <state width="1036" height="199" key="GridCell.Tab.0.center" timestamp="1586476022503">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1036" height="199" key="GridCell.Tab.0.center" timestamp="1586515794419">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1379" height="217" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1586105773978" />
-    <state width="1379" height="269" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1586294409652" />
-    <state width="1036" height="199" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1586476022503" />
+    <state width="1036" height="199" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1586515794419" />
+    <state width="1036" height="199" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1586476852557" />
     <state width="1036" height="199" key="GridCell.Tab.0.center/0.23.1440.815@0.23.1440.815" timestamp="1586475777915" />
-    <state width="1036" height="199" key="GridCell.Tab.0.left" timestamp="1586476022503">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1036" height="199" key="GridCell.Tab.0.left" timestamp="1586515794419">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1379" height="217" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1586105773977" />
-    <state width="1379" height="269" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1586294409652" />
-    <state width="1036" height="199" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1586476022503" />
+    <state width="1036" height="199" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1586515794419" />
+    <state width="1036" height="199" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1586476852556" />
     <state width="1036" height="199" key="GridCell.Tab.0.left/0.23.1440.815@0.23.1440.815" timestamp="1586475777915" />
-    <state width="1036" height="199" key="GridCell.Tab.0.right" timestamp="1586476022503">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state width="1036" height="199" key="GridCell.Tab.0.right" timestamp="1586515794420">
+      <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state width="1379" height="217" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1586105773978" />
-    <state width="1379" height="269" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1586294409652" />
-    <state width="1036" height="199" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1586476022503" />
+    <state width="1036" height="199" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1586515794420" />
+    <state width="1036" height="199" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1586476852557" />
     <state width="1036" height="199" key="GridCell.Tab.0.right/0.23.1440.815@0.23.1440.815" timestamp="1586475777915" />
     <state width="1379" height="269" key="GridCell.Tab.1.bottom" timestamp="1586448614224">
       <screen x="0" y="23" width="1440" height="813" />

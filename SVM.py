@@ -1,6 +1,7 @@
 from features import *
 from sklearn import svm
 from sklearn.externals import joblib
+import time
 
 def training(label,name):
     data=get_dict()
@@ -16,8 +17,11 @@ def training(label,name):
             else:
                 output.append(0)
     clf=svm.LinearSVC(loss='hinge')
+    start=time.clock()
     print("training_start")
     clf.fit(feature,output)
+    end=time.clock()
+    print(end-start)
     joblib.dump(clf,name)
 
 def test_result(label,name):
@@ -78,14 +82,15 @@ def f1_score():
         recall=right/true
         F1=(2*precision*recall)/(precision+recall)
         print(key,round(precision,2),round(recall,2),round(F1,2))
+        print(true)
     mini_precision=avg/all
     mini_recall=avg/p_all
     mini_F1=(2*mini_precision*mini_recall)/(mini_precision+mini_recall)
     print(round(mini_precision,2),round(mini_recall,2),round(mini_F1,2))
 
 if __name__=="__main__":
-    training('grain','svm_model/grain.m')
-    test_result('grain','svm_model/grain.m')
+    # training('grain','svm_model/grain.m')
+    # test_result('grain','svm_model/grain.m')
     f1_score()
 
 
